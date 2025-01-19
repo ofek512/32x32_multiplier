@@ -15,7 +15,10 @@ module mult32x32_fast_arith (
 );
 // Put your code here
 // ------------------
-logic [7:0] A_out, [15:0] B_out, [63:0] mul_out, [63:0] shift_out;
+    logic [7:0] A_out;
+    logic [15:0] B_out;
+    logic [63:0] mul_out;
+    logic [63:0] shift_out;
 
 //a_msb_is_0 and b_msw_is_0 checker//
 always_comb begin
