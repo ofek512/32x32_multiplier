@@ -15,8 +15,9 @@ module mult32x32_fast_fsm (
 
 // Put your code here
 // ------------------
-typedef enum {idle, Start, A00B0, A01B0, A10B0, A11B0, A00B1, A01B1, A10B1} fsm_type;
-fsm_type state, next_state;
+    typedef enum {idle, Start, A00B0, A01B0, A11B1, A11B0, A00B1, A01B1, A10B1} fsm_type;
+fsm_type state;
+fsm_type next_state;
 
 always_ff @(posedge clk, posedge reset) begin
     if(reset == 1'b1) begin
