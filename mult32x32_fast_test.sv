@@ -43,8 +43,8 @@ initial begin
 		@(posedge clk);
 	end
 
-	a= a & 32'hFFFF0000;
-	b= b & 32'hFFFF0000;
+	a= a & 32'hffff;
+	b= b & 32'hffff;
 	
 	@(posedge clk);
 	start=1;
