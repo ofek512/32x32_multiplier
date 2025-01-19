@@ -29,8 +29,8 @@ initial begin
 		@(posedge clk);
 	end
 	
-	a=32'd212533061;
-	b=32'd342824687; 
+	a=32'd212533089;
+	b=32'd382621682; 
 	reset=0;
 	
 	@(posedge clk);
